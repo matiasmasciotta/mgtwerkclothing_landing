@@ -1,0 +1,15 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .logo-main { font-family: 'Arial Black', Arial, sans-serif; font-weight: 900; }
+      .logo-sub { font-family: Arial, sans-serif; font-weight: 400; letter-spacing: 1.5px; }
+    </style>
+  </defs>
+  
+  <!-- MG en negro -->
+  <text x="10" y="70" class="logo-main" font-size="48" fill="#2D2D2D">MG</text>
+  
+  <!-- CLOTHING en rosa, vertical -->
+  <text x="95" y="25" class="logo-sub" font-size="10" fill="#E91E63" 
+        writing-mode="vertical-rl" text-orientation="mixed">CLOTHING</text>
+</svg>

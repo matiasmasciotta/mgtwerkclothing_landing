@@ -1,0 +1,78 @@
+<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="fishnetPattern" patternUnits="userSpaceOnUse" width="6" height="6">
+      <rect width="6" height="6" fill="none"/>
+      <path d="M0,0 L6,6 M6,0 L0,6" stroke="#000" stroke-width="0.4" opacity="0.7"/>
+    </pattern>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- Floor -->
+  <rect x="0" y="350" width="300" height="50" fill="#f0f0f0"/>
+  
+  <!-- Dancer figure -->
+  <!-- Head -->
+  <circle cx="150" cy="80" r="15" fill="#d4a574"/>
+  
+  <!-- Hair -->
+  <path d="M135,70 Q130,60 140,55 Q150,50 160,55 Q170,60 165,70 Q160,75 150,78 Q140,75 135,70" fill="#8b4513"/>
+  
+  <!-- Headband -->
+  <rect x="140" y="65" width="20" height="4" fill="#333" rx="2"/>
+  
+  <!-- Neck -->
+  <rect x="147" y="95" width="6" height="8" fill="#d4a574"/>
+  
+  <!-- Top (crop top) -->
+  <rect x="135" y="103" width="30" height="25" fill="#333" rx="3"/>
+  
+  <!-- Arms -->
+  <ellipse cx="125" cy="115" rx="6" ry="20" fill="#d4a574" transform="rotate(-30 125 115)"/>
+  <ellipse cx="175" cy="115" rx="6" ry="20" fill="#d4a574" transform="rotate(30 175 115)"/>
+  
+  <!-- Torso -->
+  <rect x="142" y="128" width="16" height="30" fill="#d4a574"/>
+  
+  <!-- Shorts -->
+  <rect x="138" y="158" width="24" height="20" fill="#fff" rx="3"/>
+  <rect x="140" y="160" width="20" height="16" fill="#333" rx="2"/>
+  
+  <!-- Fishnet stockings on legs -->
+  <ellipse cx="145" cy="220" rx="8" ry="45" fill="url(#fishnetPattern)"/>
+  <ellipse cx="155" cy="220" rx="8" ry="45" fill="url(#fishnetPattern)"/>
+  
+  <!-- Lower legs -->
+  <ellipse cx="145" cy="280" rx="6" ry="25" fill="#d4a574"/>
+  <ellipse cx="155" cy="280" rx="6" ry="25" fill="#d4a574"/>
+  
+  <!-- Sneakers -->
+  <ellipse cx="145" cy="320" rx="12" ry="8" fill="#000"/>
+  <ellipse cx="155" cy="320" rx="12" ry="8" fill="#000"/>
+  <rect x="140" y="315" width="10" height="6" fill="#fff"/>
+  <rect x="150" y="315" width="10" height="6" fill="#fff"/>
+  
+  <!-- Dynamic pose elements -->
+  <!-- Movement lines -->
+  <path d="M100,150 Q120,140 140,150" stroke="#fff" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M160,150 Q180,140 200,150" stroke="#fff" stroke-width="2" fill="none" opacity="0.6"/>
+  
+  <!-- Confidence sparkles -->
+  <g opacity="0.8">
+    <circle cx="80" cy="100" r="2" fill="#ffff00"/>
+    <circle cx="220" cy="120" r="1.5" fill="#ffff00"/>
+    <circle cx="250" cy="80" r="2.5" fill="#ffff00"/>
+    <circle cx="60" cy="180" r="1" fill="#ffff00"/>
+  </g>
+  
+  <!-- Style accent -->
+  <rect x="145" y="140" width="10" height="2" fill="#ff0080" filter="url(#shadow)"/>
+</svg>

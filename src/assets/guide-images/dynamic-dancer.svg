@@ -1,0 +1,86 @@
+<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dynamicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a8edea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fed6e3;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="meshPattern" patternUnits="userSpaceOnUse" width="5" height="5">
+      <rect width="5" height="5" fill="none"/>
+      <path d="M0,0 L5,5 M5,0 L0,5" stroke="#fff" stroke-width="0.3" opacity="0.8"/>
+    </pattern>
+    <filter id="energy">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="400" fill="url(#dynamicGrad)"/>
+  
+  <!-- Studio floor -->
+  <rect x="0" y="350" width="300" height="50" fill="#f5f5f5"/>
+  <rect x="0" y="360" width="300" height="3" fill="#ddd"/>
+  
+  <!-- Dancer in dynamic pose -->
+  <!-- Head -->
+  <circle cx="150" cy="80" r="14" fill="#d4a574"/>
+  
+  <!-- Hair in motion -->
+  <path d="M136,75 Q125,65 130,55 Q140,45 155,50 Q170,55 175,65 Q180,75 170,85 Q160,90 150,85 Q140,80 136,75" fill="#654321"/>
+  <path d="M170,85 Q180,90 185,95 Q190,100 185,105" stroke="#654321" stroke-width="3" fill="none"/>
+  
+  <!-- Headband -->
+  <rect x="140" y="70" width="20" height="4" fill="#000" rx="2"/>
+  
+  <!-- Neck -->
+  <rect x="147" y="94" width="6" height="8" fill="#d4a574"/>
+  
+  <!-- Black crop top -->
+  <rect x="138" y="102" width="24" height="20" fill="#000" rx="2"/>
+  
+  <!-- Arms in dynamic position -->
+  <ellipse cx="125" cy="115" rx="6" ry="20" fill="#d4a574" transform="rotate(-60 125 115)"/>
+  <ellipse cx="175" cy="120" rx="6" ry="20" fill="#d4a574" transform="rotate(30 175 120)"/>
+  
+  <!-- Torso -->
+  <rect x="144" y="122" width="12" height="30" fill="#d4a574"/>
+  
+  <!-- White shorts -->
+  <rect x="140" y="152" width="20" height="18" fill="#fff" rx="3"/>
+  <rect x="142" y="154" width="16" height="14" fill="#000" rx="2"/>
+  
+  <!-- Mesh/fishnet leggings -->
+  <ellipse cx="147" cy="210" rx="7" ry="40" fill="url(#meshPattern)" transform="rotate(-10 147 210)"/>
+  <ellipse cx="153" cy="215" rx="7" ry="40" fill="url(#meshPattern)" transform="rotate(10 153 215)"/>
+  
+  <!-- Lower legs -->
+  <ellipse cx="147" cy="270" rx="5" ry="25" fill="#d4a574" transform="rotate(-10 147 270)"/>
+  <ellipse cx="153" cy="275" rx="5" ry="25" fill="#d4a574" transform="rotate(10 153 275)"/>
+  
+  <!-- Black sneakers -->
+  <ellipse cx="147" cy="305" rx="12" ry="8" fill="#000" transform="rotate(-10 147 305)"/>
+  <ellipse cx="153" cy="310" rx="12" ry="8" fill="#000" transform="rotate(10 153 310)"/>
+  <rect x="140" y="300" width="10" height="4" fill="#fff" transform="rotate(-10 145 302)"/>
+  <rect x="150" y="305" width="10" height="4" fill="#fff" transform="rotate(10 155 307)"/>
+  
+  <!-- Energy and movement effects -->
+  <g filter="url(#energy)">
+    <path d="M100,150 Q120,140 140,150 Q160,160 180,150" stroke="#ff6b9d" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M80,180 Q100,170 120,180 Q140,190 160,180" stroke="#4facfe" stroke-width="2" fill="none" opacity="0.6"/>
+  </g>
+  
+  <!-- Dynamic sparkles -->
+  <g opacity="0.8">
+    <circle cx="90" cy="120" r="2" fill="#ff0080"/>
+    <circle cx="210" cy="140" r="1.5" fill="#00ff80"/>
+    <circle cx="70" cy="200" r="2.5" fill="#8000ff"/>
+    <circle cx="230" cy="180" r="1" fill="#ffff00"/>
+  </g>
+  
+  <!-- Movement trails -->
+  <path d="M120,100 Q110,95 105,100" stroke="#fff" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M180,120 Q190,115 195,120" stroke="#fff" stroke-width="1" fill="none" opacity="0.4"/>
+</svg>

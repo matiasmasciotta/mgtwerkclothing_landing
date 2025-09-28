@@ -1,0 +1,14 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" fill="#ffffff" rx="4"/>
+  <defs>
+    <style>
+      .favicon-text { font-family: 'Arial Black', Arial, sans-serif; font-weight: 900; }
+    </style>
+  </defs>
+  
+  <!-- MG en negro -->
+  <text x="16" y="22" class="favicon-text" font-size="14" fill="#2D2D2D" text-anchor="middle">MG</text>
+  
+  <!-- Punto rosa pequeño -->
+  <circle cx="26" cy="8" r="2" fill="#E91E63"/>
+</svg>
