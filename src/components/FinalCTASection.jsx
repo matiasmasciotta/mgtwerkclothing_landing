@@ -1,3 +1,5 @@
+import bailandoImg from '../assets/bailando.jpeg'
+
 const FinalCTASection = () => {
   const handleCTAClick = () => {
     document.getElementById('hero-form').scrollIntoView({ behavior: 'smooth' })
@@ -81,17 +83,16 @@ const FinalCTASection = () => {
           {/* Imagen derecha - Bailarina aspiracional */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              {/* Placeholder para bailarina con outfit completo */}
-              <div className="w-80 h-96 bg-gradient-to-br from-primary-400 to-primary-600 rounded-3xl flex items-center justify-center shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                <div className="text-center space-y-6 text-white">
-                  <div className="text-8xl">💃</div>
-                  <div className="space-y-2">
+              {/* Imagen de bailarina con outfit completo */}
+              <div className="w-80 h-96 rounded-3xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                <img 
+                  src={bailandoImg} 
+                  alt="Look Aspiracional - Bailarina feliz con outfit completo" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center">
+                  <div className="text-center space-y-2 text-white p-4">
                     <h3 className="text-2xl font-bold">Look Aspiracional</h3>
-                    <p className="text-lg opacity-90">Bailarina feliz con</p>
-                    <p className="text-lg opacity-90">outfit completo</p>
-                  </div>
-                  <div className="text-sm opacity-75 px-4">
-                    (Aquí iría una foto de una bailarina feliz con un outfit completo de tu marca)
                   </div>
                 </div>
               </div>

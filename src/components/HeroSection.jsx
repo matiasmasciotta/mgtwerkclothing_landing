@@ -57,7 +57,7 @@ const HeroSection = () => {
           <img 
             src={mgLogo} 
             alt="MG Clothing Logo" 
-            className="h-24 w-auto hover:scale-105 transition-transform duration-300"
+            className="h-48 w-auto hover:scale-105 transition-transform duration-300"
           />
         </div>
       </div>

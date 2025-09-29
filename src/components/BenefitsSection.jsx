@@ -1,4 +1,4 @@
-import bailarinaImage from '../assets/bailarina2.jpg'
+import bailarinaImage from '../assets/3bailan.jpeg'
 
 const BenefitsSection = () => {
   const benefits = [
@@ -64,9 +64,9 @@ const BenefitsSection = () => {
 
         {/* Imagen de bailarina */}
         <div className="flex justify-center">
-          <div className="relative max-w-2xl">
+          <div className="relative max-w-4xl">
             {/* Imagen de bailarina urbana en movimiento */}
-            <div className="w-full h-96 rounded-2xl overflow-hidden shadow-xl">
+            <div className="w-full h-[32rem] rounded-2xl overflow-hidden shadow-xl">
               <img 
                 src={bailarinaImage} 
                 alt="Bailarina urbana en movimiento" 
