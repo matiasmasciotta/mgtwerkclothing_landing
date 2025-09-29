@@ -1,3 +1,5 @@
+import ceoMgImage from '../assets/ceo-mg.jpg'
+
 const AuthoritySection = () => {
   const stats = [
     { number: "500+", label: "Bailarinas felices" },
@@ -62,15 +64,13 @@ const AuthoritySection = () => {
           {/* Imagen derecha */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              {/* Placeholder para foto de la creadora o collage */}
-              <div className="w-96 h-96 bg-gradient-to-br from-primary-200 to-primary-300 rounded-2xl flex items-center justify-center shadow-xl">
-                <div className="text-center space-y-4">
-                  <div className="text-8xl">👩‍💼</div>
-                  <p className="text-primary-800 font-bold text-xl">MGT Werk Team</p>
-                  <p className="text-primary-700 text-sm px-4">
-                    (Aquí iría una foto tuya como creadora o collage de clientas reales con tu ropa)
-                  </p>
-                </div>
+              {/* Foto de la creadora MGT Werk Team */}
+              <div className="w-[30rem] h-[30rem] rounded-2xl overflow-hidden shadow-xl">
+                <img 
+                  src={ceoMgImage} 
+                  alt="MGT Werk Team - Creadora" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               {/* Badge de verificación */}

@@ -1,3 +1,5 @@
+import bailarinaImage from '../assets/bailarina2.jpg'
+
 const BenefitsSection = () => {
   const benefits = [
     {
@@ -62,18 +64,14 @@ const BenefitsSection = () => {
 
         {/* Imagen de bailarina */}
         <div className="flex justify-center">
-          <div className="relative max-w-md">
-            {/* Placeholder para imagen de bailarina */}
-            <div className="w-full h-80 bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl flex items-center justify-center shadow-xl">
-              <div className="text-center space-y-4">
-                <div className="text-6xl">💃</div>
-                <p className="text-primary-700 font-semibold text-lg">
-                  Bailarina urbana en movimiento
-                </p>
-                <p className="text-primary-600 text-sm">
-                  (Aquí iría una foto lifestyle de una bailarina usando tu ropa)
-                </p>
-              </div>
+          <div className="relative max-w-2xl">
+            {/* Imagen de bailarina urbana en movimiento */}
+            <div className="w-full h-96 rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src={bailarinaImage} 
+                alt="Bailarina urbana en movimiento" 
+                className="w-full h-full object-cover"
+              />
             </div>
             
             {/* Efectos decorativos */}
